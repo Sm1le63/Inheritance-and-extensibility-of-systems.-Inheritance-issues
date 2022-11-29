@@ -1,4 +1,5 @@
 package Repository;
+
 import Inheritance.and.extensibility.of.systems.Product;
 
 public class ProductRepository {
@@ -14,10 +15,9 @@ public class ProductRepository {
     }
 
 
-
     public void removeById(int id) {                              //Удаление
         Product[] tmp = new Product[products.length - 1];
-        int copyToId= 0;
+        int copyToId = 0;
         for (Product product : products) {
             if (product.getId() != id) {
                 tmp[copyToId] = product;
